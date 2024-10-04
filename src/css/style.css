@@ -409,6 +409,53 @@ body {
   background-color: #D4E9F8;
 }
 
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 54px;
+}
+
+.navbar-toggler {
+  padding: 0px;
+}
+
+.container-fluid {
+  padding-top: 14px;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.dropdown-item__circle-one {
+  background-color: #009959;
+}
+
+.dropdown-item__circle-two {
+  background-color: #C10000;
+}
+
+.dropdown-item__circle-three {
+  background-color: #0050EA;
+}
+
+.dropdown-item__circle-four {
+  background-color: #F5ED56;
+}
+
+.dropdown-item:hover {
+  background-color: transparent;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -526,27 +573,10 @@ body {
   z-index: -2;
 }
 
-.nav-item {
+.main-section__left {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-right: 40px;
-}
-
-.nav-item__circle-one {
-  background-color: #009959;
-}
-
-.nav-item__circle-two {
-  background-color: #C10000;
-}
-
-.nav-item__circle-three {
-  background-color: #0050EA;
-}
-
-.nav-item__circle-four {
-  background-color: #F5ED56;
 }
 
 .navbar__text {
@@ -613,10 +643,30 @@ body {
   flex-direction: row;
 }
 
+.second-section__link {
+  color: #2E2E2E;
+  text-decoration: none;
+}
+
+.second-section__link:hover {
+  text-decoration: underline;
+  color: #2E2E2E;
+}
+
 .third-section__title {
   margin-bottom: 44px;
   font-size: 48px;
   font-family: "wes";
+}
+
+.third-section__link {
+  color: #2E2E2E;
+  text-decoration: none;
+}
+
+.third-section__link:hover {
+  text-decoration: underline;
+  color: #2E2E2E;
 }
 
 .items-container {
@@ -698,6 +748,11 @@ body {
   color: #2E2E2E;
 }
 
+.head-box__link:hover {
+  text-decoration: underline;
+  color: #2E2E2E;
+}
+
 .body-box {
   padding-left: 12px;
   padding-right: 12px;
@@ -774,12 +829,12 @@ body {
   flex-direction: column;
   align-items: center;
   border: 4px dotted;
-  margin-bottom: 64px;
+  margin-bottom: 44px;
 }
 
 .four-section__img {
-  padding-top: 96px;
-  margin-bottom: 64px;
+  padding-top: 66px;
+  margin-bottom: 34px;
 }
 
 .four-section__title {
@@ -787,7 +842,15 @@ body {
   max-width: 500px;
   text-align: center;
   font-family: "wes";
+  margin-bottom: 34px;
+}
+
+.four-section__text {
+  font-family: "display";
+  font-size: 48px;
+  max-width: 500px;
   margin-bottom: 64px;
+  text-align: center;
 }
 
 .four-section__form-box {
@@ -839,6 +902,7 @@ body {
   font-size: 16px;
   font-family: "display";
   margin-bottom: 13px;
+  cursor: pointer;
 }
 
 .footer__line {
