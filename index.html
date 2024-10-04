@@ -15,26 +15,47 @@
           <img src="./src/icons/logo.png" alt="" class="main-section__logo">
           <nav class="navbar navbar-expand-lg bg-body-tertiary">
               <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Переключатель навигации">
-                  <span class="navbar-toggler-icon"></span>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./src/icons/Vector.png" alt="" class="navbar-toggler-icon__img">
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li class="dropdown-item">
+                          <div class="dropdown-item__circle-one circle"></div>
+                          <a class="nav-link active" aria-current="page" href="https://inheeen.github.io/about-page/"><p class="navbar__text">About</p></a>
+                        </li>
+                        <li class="dropdown-item">
+                          <div class="dropdown-item__circle-two circle"></div>
+                          <a class="nav-link" href="https://inheeen.github.io/ventures-pages/"><p class="navbar__text">Ventures</p></a>
+                        </li>
+                        <li class="dropdown-item">
+                          <div class="dropdown-item__circle-three circle"></div>
+                          <a class="nav-link" href="https://inheeen.github.io/tools-page/"><p class="navbar__text">Tools</p></a>
+                        </li>
+                        <li class="dropdown-item">
+                          <div class="dropdown-item__circle-four circle"></div>
+                          <a class="nav-link" href="https://inheeen.github.io/notepad-page/"><p class="navbar__text">Notepad</p></a>
+                        </li>
+                  </span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="collapse navbar-collapse" >
                   <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <div class="nav-item__circle-one circle"></div>
-                      <a class="nav-link active" aria-current="page" href="#"><p class="navbar__text">About</p></a>
+                    <li class="dropdown-item">
+                      <div class="dropdown-item__circle-one circle"></div>
+                      <a class="nav-link active" aria-current="page" href="https://inheeen.github.io/about-page/"><p class="navbar__text">About</p></a>
                     </li>
-                    <li class="nav-item">
-                      <div class="nav-item__circle-two circle"></div>
-                      <a class="nav-link" href="#"><p class="navbar__text">Ventures</p></a>
+                    <li class="dropdown-item">
+                      <div class="dropdown-item__circle-two circle"></div>
+                      <a class="nav-link" href="https://inheeen.github.io/ventures-pages/"><p class="navbar__text">Ventures</p></a>
                     </li>
-                    <li class="nav-item">
-                      <div class="nav-item__circle-three circle"></div>
-                      <a class="nav-link" href="#"><p class="navbar__text">Tools</p></a>
+                    <li class="dropdown-item">
+                      <div class="dropdown-item__circle-three circle"></div>
+                      <a class="nav-link" href="#https://inheeen.github.io/tools-page/"><p class="navbar__text">Tools</p></a>
                     </li>
-                    <li class="nav-item">
-                      <div class="nav-item__circle-four circle"></div>
-                      <a class="nav-link" href="#"><p class="navbar__text">Notepad</p></a>
+                    <li class="dropdown-item">
+                      <div class="dropdown-item__circle-four circle"></div>
+                      <a class="nav-link" href="https://inheeen.github.io/notepad-page/"><p class="navbar__text">Notepad</p></a>
                     </li>
                   </ul>
                 </div>
@@ -45,9 +66,7 @@
                 </a>
               </button>
             </nav>
-            
       </div>
-      <!-- <img src="./src/img/main-section__bgc.png" alt="" class="main-section__img"> -->
     <!-- основной контент -->
       <div class="main-section__content-container container">
         <h1 class="main-section__title">At Plain Sight Ventures , we connect with people who have great ideas, but don't know what to do with them.</h1>
@@ -64,14 +83,14 @@
           <p class="second-section__text">We’re looking for active creatives, independent thinkers, connected
           insiders, and ambitious builders who, like us, seek to reinvent and challenge how ideas are brought to life.</p>
           <div class="second-section__btn-box">
-            <button class="second-section__first-btn btn">Learn more</button>
-          <button class="second-section__second-btn second-btn">Got an idea?</button>
+            <button class="second-section__first-btn btn"><a href="#info" class="second-section__link">Learn more</a></button>
+          <button class="second-section__second-btn second-btn"> <a href="#idea" class="second-section__link">Got an idea?</a></button>
           </div>
         </div>
       </div>
     </section>
     <!-- третья секция -->
-    <section class="third-section bgc">
+    <section class="third-section bgc" id="info">
       <div class="third-section__line container line"></div>
       <div class="third-section__content-container container">
         <div class="third-section__head head">
@@ -249,8 +268,7 @@
             </div>
             <div class="items-box__body-box body-box">
               <img src="./src/img/third-section9.png" alt="" class="body-box__img">
-              <p class="body-box__text">How to make a Minimum Viable
-Brand work for your startup</p>
+              <p class="body-box__text">How to make a Minimum Viable Brand work for your startup</p>
             </div>
             <div class="items-box__footer-box footer-box">
               <p class="footer-box__name">Jason Walkow</p>
@@ -262,20 +280,21 @@ Brand work for your startup</p>
         <!-- бокс с кнопками -->
         <div class="third-section__btn-box btn-box">
           <button class="btn-box__first-btn">Go to</button>
-          <button class="btn-box__second-btn second-btn">About</button>
-          <button class="btn-box__second-btn second-btn">Ventures</button>
-          <button class="btn-box__second-btn second-btn">Tools</button>
-          <button class="btn-box__second-btn second-btn">Notepad</button>
+          <button class="btn-box__second-btn second-btn"><a href="https://inheeen.github.io/about-page/" class="third-section__link">About</a></button>
+          <button class="btn-box__second-btn second-btn"><a href="https://inheeen.github.io/ventures-pages/" class="third-section__link">Ventures</a></button>
+          <button class="btn-box__second-btn second-btn"><a href="https://inheeen.github.io/tools-page/" class="third-section__link">Tools</a></button>
+          <button class="btn-box__second-btn second-btn"><a href="https://inheeen.github.io/notepad-page/" class="third-section__link">Notepad</a></button>
         </div>
       </div>
 
     </section>
     <!-- четвертая секция -->
-    <section class="four-section bgc">
+    <section class="four-section bgc" id="idea">
       <div class="four-section__content-container container">
         <div class="four-section__note">
             <img src="./src/img/four-section.png" alt="" class="four-section__img">
-            <p class="four-section__title">Get the latest stories
+            <p class="four-section__title">The NotePad</p>
+            <p class="four-section__text">Get the latest stories
               delivered to your inbox</p>
             <div class="four-section__form-box">
               <form action="send.php" class="form" method="post">
@@ -319,7 +338,7 @@ Brand work for your startup</p>
         <div class="footer__line container line"></div>
         <div class="footer__second-section">
           <p class="footer__text footer__second-text">Got a great idea but need help building it?</p>
-          <button class="footer__btn second-btn">Get in touch</button>
+          <button class="footer__btn second-btn">Get in touch</button> <!-- можно модальное окно с отправкой письма на почту -->
         </div>
         <div class="footer__line container line"></div>
         <div class="footer__third-section">
