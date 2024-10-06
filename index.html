@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/bootstrap.min.css">
     <link rel="stylesheet" href="./src/css/style.css">
-    <title>Интернет-магазин</title>
+    <title>PlainSvent</title>
+    <style>
+      .hide {
+          display: none; 
+      }
+  </style>
+  <script src="./src/js/modal.js" defer></script>
 </head>
 <body>
     <!-- первая секция -->
@@ -51,7 +57,7 @@
                     </li>
                     <li class="dropdown-item">
                       <div class="dropdown-item__circle-three circle"></div>
-                      <a class="nav-link" href="#https://inheeen.github.io/tools-page/"><p class="navbar__text">Tools</p></a>
+                      <a class="nav-link" href="https://inheeen.github.io/tools-page/"><p class="navbar__text">Tools</p></a>
                     </li>
                     <li class="dropdown-item">
                       <div class="dropdown-item__circle-four circle"></div>
@@ -338,7 +344,8 @@
         <div class="footer__line container line"></div>
         <div class="footer__second-section">
           <p class="footer__text footer__second-text">Got a great idea but need help building it?</p>
-          <button class="footer__btn second-btn">Get in touch</button> <!-- можно модальное окно с отправкой письма на почту -->
+          <button class="footer__btn second-btn" id="open-modal-btn">Get in touch</button>
+        </div>
         </div>
         <div class="footer__line container line"></div>
         <div class="footer__third-section">
@@ -368,7 +375,38 @@
         </div>
       </div>
     </footer>
-    <script defer src="./src/js/index.js"></script>
-    <script src="./src/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Модальное окно -->
+    <div id="my-modal" class="modal">
+      <div class="modal__box">
+        <div class="modal-box__head">
+          <button id="close-my-modal-btn" class="modal-box__btn">
+            <img src="./src/icons/modal-close.png" alt="">
+          </button>
+        </div>
+        <div class="modal-box__body">
+          <p class="modal-box__title">Got an idea?</p>
+          <p class="modal-box__text">We’re looking for people who have an idea of their own or are looking to help us launch great ideas. Whether you want to solve the problem yourself or are just looking for a new solution, we’d love for you to join us.</p>
+          <form action="send.php" class="form-box__first-group" method="post">
+            <div class="first-form__box box-form">
+                <label for="first-form" class="form-box__label">First name*</label>
+                <input id="first-form" type="text" class="form-box__input" name="fio" placeholder="First name" required>
+            </div>
+            <div class="second-form__box box-form">
+                <label for="second-form" class="form-box__label">Last name*</label>
+                <input id="second-form" type="text" class="form-box__input" name="fio" placeholder="Last name" required>
+            </div>
+            <div class="third-form__box box-form">
+                <label for="third-form" class="form-box__label">Email address*</label>
+                <input id="third-form" type="email" class="form-box__input" name="email" placeholder="E-mail" required>
+            </div>
+            <input type="submit" class="form-box__btn" value="Get in touch">
+          </form>
+        </div>
+      </div>
+  </div>
+  <script defer src="./src/js/index.js"></script>
+  <script src="./src/js/bootstrap.bundle.min.js"></script>
+  
 </body>
 </html>
