@@ -878,6 +878,12 @@ body {
   align-items: center;
 }
 
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .footer {
   background-color: #F6F6F6;
 }
