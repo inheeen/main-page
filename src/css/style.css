@@ -873,6 +873,9 @@ body {
   border-radius: 100px;
   background-color: #2E2E2E;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {
@@ -925,6 +928,8 @@ body {
   width: 145px;
   height: 46px;
   background-color: #FEFEFE;
+  color: #2E2E2E;
+  cursor: pointer;
 }
 
 .footer__big-text {
@@ -1056,6 +1061,7 @@ body {
   background-color: transparent;
   font-family: "display";
   font-size: 16px;
+  color: #2E2E2E;
 }
 
 @media (max-width: 991px) {
